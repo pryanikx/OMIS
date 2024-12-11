@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.back-button {
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon input {
+    flex: 1;
+}
+
+.icon-button {
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-button:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    width: auto; /* Кнопка не растягивается на всю ширину */
+    padding: 8px 15px; /* Кнопка уменьшена */
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 0; /* Прижата к левому краю */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

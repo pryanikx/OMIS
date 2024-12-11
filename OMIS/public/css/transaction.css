@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.transaction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование транзакций по горизонтали */
+    padding: 20px;
+}
+
+.transactions {
+    width: 100%; /* Полная ширина для выравнивания содержимого */
+    max-width: 600px; /* Ограничение ширины транзакций */
+    margin-bottom: 20px;
+}
+
+.transactions h2 {
+    font-size: 16px; /* Уменьшен размер заголовка */
+    margin-bottom: 8px;
+    color: #333; /* Темно-серый цвет */
+    font-weight: bold;
+    text-align: left; /* Заголовки выравнены по левому краю */
+}
+
+.transaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0; /* Уменьшенные отступы */
+    width: 100%; /* Используем всю ширину родителя */
+    border-bottom: 1px solid #eee; /* Линия между транзакциями */
+}
+
+.transaction:last-child {
+    border-bottom: none; /* Убираем линию у последнего элемента */
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px; /* Отступ от иконки до текста */
+}
+
+.details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 14px; /* Уменьшен размер шрифта */
+    font-weight: bold;
+    color: #333;
+}
+
+.details p {
+    margin: 2px 0 0;
+    font-size: 12px; /* Уменьшен размер шрифта */
+    color: #666; /* Более светлый серый цвет */
+}
+
+.type {
+    flex: 1;
+    font-size: 12px;
+    color: #999; /* Цвет для категории */
+    text-align: right;
+    margin-right: 20px;
+}
+
+.amount {
+    font-weight: bold;
+    font-size: 14px; /* Уменьшен размер шрифта */
+}
+
+.amount.negative {
+    color: #007bff; /* Красный цвет для отрицательных сумм */
+}
+
+.action-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-buttons button {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #0056b3;
+}

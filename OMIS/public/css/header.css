@@ -1,0 +1,52 @@
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px; /* Унифицированные отступы */
+    position: sticky; /* Удержание вверху */
+    top: 0;
+    z-index: 1000;
+    margin: 0; /* Убираем внешние отступы */
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 30px; /* Размер логотипа */
+    margin-right: 10px; /* Отступ между логотипом и текстом */
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none; /* Убрано подчеркивание */
+    font-size: 16px;
+    margin: 0 10px; /* Уменьшен отступ между ссылками */
+    transition: color 0.3s ease;
+}
+
+header nav {
+    display: flex;
+    flex: 1; /* Занимает оставшееся пространство */
+    justify-content: space-evenly; /* Равномерное распределение ссылок */
+    margin-left: 20px; /* Уменьшен отступ от логотипа */
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none; /* Убрано подчеркивание */
+    font-size: 16px;
+    margin: 0 10px; /* Уменьшен отступ между ссылками */
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ddd; /* Изменение цвета при наведении */
+}
+
+header nav a.active {
+    font-weight: bold; /* Только выделение жирным */
+}
